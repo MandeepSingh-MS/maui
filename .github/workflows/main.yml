@@ -1,0 +1,28 @@
+name: Build APK
+
+on:
+  workflow_dispatch
+
+jobs: 
+  build:
+    name: Build Release
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.x
+    - name: Install workload
+      run: dotnet workload install maui-android
+    - name: Setup Java SDK
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+    - name: Build
+      run:  dotnet build -c Release -f net6.0-android
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: apk
+        path: bin\Release\net6.0-android\com.companyname.maui-Signed.apk
