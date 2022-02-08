@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="MAUI.MobileShell">
+    <TabBar>
+        <Tab Title="One"
+             >
+            <ShellContent>
+            <Button 
+                Text="Click me"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Two"
+             >
+               <ShellContent>
+               <Button 
+                Text="Click me 2"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="Center" />
+            </ShellContent>
+        </Tab>
+       
+    </TabBar>
+</Shell>
