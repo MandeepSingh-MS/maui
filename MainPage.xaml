@@ -47,36 +47,5 @@
 
         </Grid>
 
-<Shell>
-    <TabBar>
-        <Tab Title="One"
-             >
-            <ShellContent>
-            <Button 
-                Text="Click me"
-                FontAttributes="Bold"
-                Grid.Row="3"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-            </ShellContent>
-        </Tab>
-
-        <Tab Title="Two"
-             >
-               <ShellContent>
-               <Button 
-                Text="Click me 2"
-                FontAttributes="Bold"
-                Grid.Row="3"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked2"
-                HorizontalOptions="Center" />
-            </ShellContent>
-        </Tab>
-       
-    </TabBar>
-</Shell>
-
     </ScrollView>
 </ContentPage>

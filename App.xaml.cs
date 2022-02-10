@@ -8,5 +8,8 @@ public partial class App : Application
 
         // MainPage = new MainPage();
         MainPage = new AppShell();
+
+        Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
+        Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
     }
 }
