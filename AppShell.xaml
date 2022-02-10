@@ -6,7 +6,7 @@
        <TabBar>
         <Tab Title="Heelo"
              >
-            <ShellContent ContentTemplate="{DataTemplate MainPage}" />
+            <ShellContent ContentTemplate="{DataTemplate MAUI.MainPage}" />
         </Tab>
 
        </TabBar>
