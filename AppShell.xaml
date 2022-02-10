@@ -7,7 +7,7 @@
         <Tab Title="Heelo"
              >
             <ShellContent  >
-<MAUI.MainPage/>
+<local:MAUI.MainPage/>
 </ShellContent  >
 
         </Tab>
