@@ -6,7 +6,7 @@
        <TabBar>
         <Tab Title="Heelo"
              >
-            <ShellContent ContentTemplate="{DataTemplate pages:MainPage}" />
+            <ShellContent ContentTemplate="{DataTemplate MainPage}" />
         </Tab>
 
        </TabBar>

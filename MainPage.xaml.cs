@@ -12,12 +12,12 @@ public partial class MainPage : ContentPage
 
 
 
-    private Task OnCounterClicked(object sender, EventArgs e)
+    private void OnCounterClicked(object sender, EventArgs e)
     {
         count++;
         CounterLabel.Text = $"Current count: {count}";
 
-        return Shell.Current.GoToAsync($"{nameof(Page2)}");
+        Shell.Current.GoToAsync($"{nameof(Page2)}");
 
     }
 }
