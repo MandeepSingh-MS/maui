@@ -16,10 +16,15 @@ public partial class MainPage : ContentPage
     {
         count++;
         CounterLabel.Text = $"Current count: {count}";
+        sp();
 
+
+
+    }
+
+    private Task sp()
+    {
         return Shell.Current.GoToAsync($"{nameof(Page2)}");
-
-
     }
 }
 
