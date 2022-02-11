@@ -1,22 +1,13 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:mm="Maui.MainPage"
+       xmlns:mm="Maui"
        x:Class="MAUI.AppShell">
 
 
        <TabBar>
         <Tab Title="Heelo"
              >
-            <ShellContent>
-            <DataTemplate>
-                <Label 
-                Text="Hello, World!"
-                Grid.Row="0"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-            </DataTemplate>
-            </ShellContent>
+           <ShellContent ContentTemplate="{DataTemplate mm:MainPage}" />
 
         </Tab>
 
