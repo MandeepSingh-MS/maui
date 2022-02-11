@@ -14,7 +14,6 @@ public partial class MainPage : ContentPage
 
     private void OnCounterClicked(object sender, EventArgs e)
     {
-        WeatherLabel.Text = $"Current count: {count}";
         // sp();
 
 
