@@ -1,13 +1,13 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:mm="clr-namespace:MAUI.MainPage"
+       xmlns:mm="clr-namespace:MAUI"
        x:Class="MAUI.AppShell">
 
 
        <TabBar>
         <Tab Title="Heelo"
              >
-           <ShellContent ContentTemplate="{DataTemplate mm}" />
+           <ShellContent ContentTemplate="{DataTemplate mm:MainPage}" />
 
         </Tab>
 
