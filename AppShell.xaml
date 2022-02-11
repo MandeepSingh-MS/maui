@@ -4,13 +4,13 @@
        x:Class="MAUI.AppShell">
 
 
-       <TabBar>
+<!--        <TabBar>
         <Tab Title="Heelo"
-             >
+             > -->
            <ShellContent ContentTemplate="{DataTemplate mm:MainPage}" />
 
-        </Tab>
+<!--         </Tab>
 
-       </TabBar>
+       </TabBar> -->
   
 </Shell>
