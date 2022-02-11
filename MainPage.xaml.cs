@@ -2,11 +2,11 @@
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
 
     public MainPage()
     {
         InitializeComponent();
+        GetWeather();
     }
 
 
@@ -14,9 +14,8 @@ public partial class MainPage : ContentPage
 
     private void OnCounterClicked(object sender, EventArgs e)
     {
-        count++;
-        CounterLabel.Text = $"Current count: {count}";
-        sp();
+        WeatherLabel.Text = $"Current count: {count}";
+        // sp();
 
 
 
@@ -25,6 +24,15 @@ public partial class MainPage : ContentPage
     private Task sp()
     {
         return Shell.Current.GoToAsync($"{nameof(Page2)}");
+    }
+
+
+    private async void GetWeather()
+    {
+        HttpClient httpClient = new();
+        String data = await httpClient.GetStringAsync("https://www.accuweather.com/en/in/phillaur/2956111/weather-forecast/2956111");
+
+        WeatherLabel.Text = data.Substring(data.IndexOf("class=\"phrase\""), 20);
     }
 }
 
