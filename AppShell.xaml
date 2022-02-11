@@ -7,12 +7,7 @@
         <Tab Title="Heelo"
              >
             <ShellContent  >
-<Label 
-                Text="Hello, World!"
-                Grid.Row="0"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+<MAUI.MainPage/>
 </ShellContent  >
 
         </Tab>
