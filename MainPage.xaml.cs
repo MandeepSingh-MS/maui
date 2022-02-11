@@ -17,7 +17,8 @@ public partial class MainPage : ContentPage
         count++;
         CounterLabel.Text = $"Current count: {count}";
 
-        Shell.Current.GoToAsync($"{nameof(Page2)}");
+        return Shell.Current.GoToAsync($"{nameof(Page2)}");
+
 
     }
 }
