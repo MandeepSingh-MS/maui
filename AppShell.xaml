@@ -7,7 +7,16 @@
        <TabBar>
         <Tab Title="Heelo"
              >
-            <ShellContent ContentTemplate="{DataTemplate mm}" />
+            <ShellContent>
+            <DataTemplate>
+                <Label 
+                Text="Hello, World!"
+                Grid.Row="0"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            </DataTemplate>
+            </ShellContent>
 
         </Tab>
 
