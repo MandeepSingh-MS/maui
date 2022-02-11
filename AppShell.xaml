@@ -6,7 +6,7 @@
        <TabBar>
         <Tab Title="Heelo"
              >
-            <ShellContent  >
+            <ShellContent Title="Hika" >
 <MAUI.MainPage/>
 </ShellContent  >
 
