@@ -7,9 +7,6 @@ namespace MAUI;
 public partial class App : Application
 {
 
-    static readonly string ENDPOINT = "https://db.fauna.com:443";
-    // NOTE: use the correct endpoint for your database's Region Group.
-    static readonly string SECRET = "<<YOUR-SECRET-HERE>>";
 
     public App()
     {

@@ -16,9 +16,9 @@ public partial class MainPage : ContentPage
     {
         LoadAddCodePage();
     }
-    private void OnItemclicked(object sender, EventArgs e)
+    async private void OnItemclicked(object sender, ItemTappedEventArgs e)
     {
-
+        await DisplayAlert("Alert", e.Item.ToString(), "OK");
     }
     async private void SearchTextChanged(object sender, TextChangedEventArgs e)
     {
