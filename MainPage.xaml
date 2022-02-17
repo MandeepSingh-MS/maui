@@ -33,7 +33,14 @@
                  ItemTapped="OnItemclicked"
 
                   Grid.Row="2"
-                 ></ListView>
+                 >
+                  <ListView.ItemTemplate>
+            <DataTemplate>
+                  <TextCell Text="{Binding Title}"
+                               />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
 
 
 
