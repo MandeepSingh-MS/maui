@@ -36,8 +36,9 @@
                  >
                   <ListView.ItemTemplate>
             <DataTemplate>
-                  <TextCell Text="{Binding Title}"
-                               />
+                 <ViewCell>
+                <Label Text="{Binding Title}" />
+            </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
         </ListView>
