@@ -1,5 +1,7 @@
 ﻿global using FaunaDB.Client;
 global using FaunaDB.Types;
+global using static FaunaDB.Query.Language;
+
 namespace MAUI;
 
 public partial class App : Application
@@ -18,7 +20,7 @@ public partial class App : Application
 
 
         Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
-        Routing.RegisterRoute(nameof(Page2), typeof(Page2));
+        Routing.RegisterRoute(nameof(AddCodePage), typeof(AddCodePage));
 
 
 
