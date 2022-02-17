@@ -6,64 +6,42 @@
     <ScrollView>
        
 
-           <StackLayout Margin="20,35,20,20">
+           <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*"
+              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
 
-           
 
-            <Label 
-                Text="Loading..."
-                Grid.Row="2"
-                FontSize="18"
+            
+
+
+               <Button 
+                Text="Add Code"
                 FontAttributes="Bold"
-                x:Name="WeatherLabel"
-                HorizontalOptions="Center" />
-
-            <!-- <Button 
-                Text="Click me"
-                FontAttributes="Bold"
-                Grid.Row="3"
+                Grid.Row="0"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="GoToAddCodePage"
                 HorizontalOptions="Center" />
-
-
-                <Button 
-                Text="Click me"
-                FontAttributes="Bold"
-                Grid.Row="3"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="GoToAddCodePage"
-                HorizontalOptions="Center" /> -->
 
 
                 <Entry x:Name="SearchText" Placeholder="search.." 
                 TextChanged="SearchTextChanged"
-HorizontalOptions="FillAndExpand"
 
-BackgroundColor="#d5f5f5"
-
+                 Grid.Row="1"
                  />
 
 
                  <ListView x:Name="TitleView" SelectionMode="Single"
                  ItemTapped="OnItemclicked"
-                 >
-        
-</ListView>
+
+                  Grid.Row="2"
+                 ></ListView>
 
 
 
 
 
-        </StackLayout>
+        </Grid>
 
-         <AbsoluteLayout>
-        <ImageButton 
-            BackgroundColor="#c5f23d"
-            AbsoluteLayout.LayoutFlags="PositionProportional"  
-            AbsoluteLayout.LayoutBounds=".95,.95,80,80" 
-            Clicked="GoToAddCodePage" />
-    </AbsoluteLayout>
+         
 
     </ScrollView>
 </ContentPage>
