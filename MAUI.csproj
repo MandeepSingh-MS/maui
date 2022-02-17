@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+
+
 		<TargetFrameworks>net6.0-android;</TargetFrameworks>
 		<!-- <TargetFrameworks>net6.0;</TargetFrameworks> -->
 		
@@ -13,8 +15,6 @@
 
 
 
-		<AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
-		<!-- <AndroidSupportedAbis><armeabi | armeabi-v7a | x86></AndroidSupportedAbis> -->
     
 		<!-- Display name -->
 		<ApplicationTitle>MAUI</ApplicationTitle>
@@ -50,6 +50,8 @@
 	<ItemGroup>
 	  <PackageReference Include="FaunaDB.Client" Version="4.2.0" />
 	</ItemGroup>
+
+	
 
 	
 	
