@@ -10,6 +10,11 @@
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+
+
+
+		<AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
+		<!-- <AndroidSupportedAbis><armeabi | armeabi-v7a | x86></AndroidSupportedAbis> -->
     
 		<!-- Display name -->
 		<ApplicationTitle>MAUI</ApplicationTitle>
