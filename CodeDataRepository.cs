@@ -8,6 +8,7 @@ static class CodeDataRepository
     static string SECRET = "fnAEfiQ3OZAASZRSZyfG7blkAlqLww7QdGyYabdO";
     static FaunaClient client = new FaunaClient(endpoint: ENDPOINT, secret: SECRET);
 
+#nullable enable
     public static RefV? after = null;
 
     public static Task<Value> GetCodeData()

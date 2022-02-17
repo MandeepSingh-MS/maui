@@ -4,10 +4,9 @@
              BackgroundColor="{DynamicResource SecondaryColor}">
 
     <ScrollView>
-        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*"
-              Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+       
 
-           
+           <StackLayout Margin="20,35,20,20">
 
            
 
@@ -52,7 +51,7 @@
 
 
 
-        </Grid>
+        </StackLayout>
 
          <AbsoluteLayout>
         <ImageButton 
