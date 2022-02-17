@@ -10,13 +10,13 @@
 
            
 
-            <!-- <Label 
+            <Label 
                 Text="Loading..."
                 Grid.Row="2"
                 FontSize="18"
                 FontAttributes="Bold"
                 x:Name="WeatherLabel"
-                HorizontalOptions="Center" /> -->
+                HorizontalOptions="Center" />
 
             <!-- <Button 
                 Text="Click me"
@@ -38,6 +38,8 @@
 
                 <Entry x:Name="SearchText" Placeholder="search.." 
                 TextChanged="SearchTextChanged"
+
+                
                  />
 
 
