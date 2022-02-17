@@ -1,0 +1,144 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-android": {
+      "FaunaDB.Client/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/FaunaDB.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FaunaDB.Client.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FaunaDB.Client/4.2.0": {
+      "sha512": "i3TdatZK8O62zKk1nMw8dcTrpdi3Q4G6teLdlWDeoct+F/VXgqAxRrW3QCxivAjF/oWeR46p2ku8lMK+fU31CA==",
+      "type": "package",
+      "path": "faunadb.client/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "faunadb.client.4.2.0.nupkg.sha512",
+        "faunadb.client.nuspec",
+        "lib/net45/FaunaDB.Client.dll",
+        "lib/net45/FaunaDB.Client.xml",
+        "lib/netstandard1.5/FaunaDB.Client.dll",
+        "lib/netstandard1.5/FaunaDB.Client.xml",
+        "lib/netstandard2.0/FaunaDB.Client.dll",
+        "lib/netstandard2.0/FaunaDB.Client.xml",
+        "lib/netstandard2.1/FaunaDB.Client.dll",
+        "lib/netstandard2.1/FaunaDB.Client.xml"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-android": [
+      "FaunaDB.Client >= 4.2.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/sumeet/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/sumeet/Downloads/ms/MAUI/MAUI.csproj",
+      "projectName": "MAUI",
+      "projectPath": "/home/sumeet/Downloads/ms/MAUI/MAUI.csproj",
+      "packagesPath": "/home/sumeet/.nuget/packages/",
+      "outputPath": "/home/sumeet/Downloads/ms/MAUI/obj/",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "configFilePaths": [
+        "/home/sumeet/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-android"
+      ],
+      "sources": {
+        "/home/sumeet/softwares/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-android": {
+          "targetAlias": "net6.0-android",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-android": {
+        "targetAlias": "net6.0-android",
+        "dependencies": {
+          "FaunaDB.Client": {
+            "target": "Package",
+            "version": "[4.2.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/sumeet/softwares/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

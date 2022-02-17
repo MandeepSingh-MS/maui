@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sumeet/Downloads/ms/MAUI/MAUI.csproj": {}
+  },
+  "projects": {
+    "/home/sumeet/Downloads/ms/MAUI/MAUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sumeet/Downloads/ms/MAUI/MAUI.csproj",
+        "projectName": "MAUI",
+        "projectPath": "/home/sumeet/Downloads/ms/MAUI/MAUI.csproj",
+        "packagesPath": "/home/sumeet/.nuget/packages/",
+        "outputPath": "/home/sumeet/Downloads/ms/MAUI/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/home/sumeet/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-android"
+        ],
+        "sources": {
+          "/home/sumeet/softwares/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-android": {
+            "targetAlias": "net6.0-android",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-android": {
+          "targetAlias": "net6.0-android",
+          "dependencies": {
+            "FaunaDB.Client": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/sumeet/softwares/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
