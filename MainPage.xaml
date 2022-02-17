@@ -38,8 +38,10 @@
 
                 <Entry x:Name="SearchText" Placeholder="search.." 
                 TextChanged="SearchTextChanged"
+HorizontalOptions="FillAndExpand"
 
-                
+BackgroundColor="#d5f5f5"
+
                  />
 
 
