@@ -14,7 +14,7 @@
 		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
 
 
-		<PublishTrimmed>false</PublishTrimmed>
+		<!-- <PublishTrimmed>false</PublishTrimmed> -->
 
 
 
