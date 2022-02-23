@@ -3,9 +3,17 @@
 public partial class MainPage : ContentPage
 {
 
+
+    List<string> titles = new();
+
+
     public MainPage()
     {
+        titles.Add("A");
+        titles.Add("B");
         InitializeComponent();
+        TitleView.ItemsSource = titles;
+
         // GetWeather();
     }
 
@@ -50,8 +58,8 @@ public partial class MainPage : ContentPage
 
         Value value = await CodeDataRepository.GetCodeDataWithTitleMatching(text);
 
-        Console.WriteLine(value);
 
+        titles.Clear();
 
 
         Value[] data = value.At("data").To<Value[]>().Value;
@@ -64,12 +72,10 @@ public partial class MainPage : ContentPage
             codeData.Add(item.At("data").To<CodeData>().Value);
         }
 
-        List<string> titles = new();
         foreach (CodeData item in codeData)
         {
             titles.Add(item.Title);
         }
-        TitleView.ItemsSource = titles;
         return true;
 
     }
