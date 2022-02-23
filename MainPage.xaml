@@ -32,7 +32,8 @@
                  <CollectionView x:Name="TitleView" SelectionMode="Single"
                  SelectionChanged="OnCollectionViewSelectionChanged"
 
-                  Grid.Row="8"
+                  Grid.Row="3"
+                  Grid.RowSpan="8"
                  >
                   <CollectionView.ItemTemplate>
             <DataTemplate>
