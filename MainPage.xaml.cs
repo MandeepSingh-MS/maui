@@ -24,9 +24,15 @@ public partial class MainPage : ContentPage
     {
         LoadAddCodePage();
     }
-    async private void OnItemclicked(object sender, SelectionChangedEventArgs e)
+
+    void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        await DisplayAlert("Alert", e.CurrentSelection.FirstOrDefault().ToString(), "OK");
+        OnItemclicked(e.CurrentSelection.FirstOrDefault().ToString());
+
+    }
+    async private void OnItemclicked(string k)
+    {
+        await DisplayAlert("Alert", k, "OK");
     }
     async private void SearchTextChanged(object sender, TextChangedEventArgs e)
     {
