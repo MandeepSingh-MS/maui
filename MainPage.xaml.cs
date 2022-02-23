@@ -82,6 +82,7 @@ public partial class MainPage : ContentPage
         {
             titles.Add(item.Title);
         }
+        TitleView.ItemsSource = titles;
         return true;
 
     }
