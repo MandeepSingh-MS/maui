@@ -1,10 +1,13 @@
-﻿namespace MAUI;
+﻿using System.Collections.ObjectModel;
+
+namespace MAUI;
 
 public partial class MainPage : ContentPage
 {
 
 
-    List<string> titles = new();
+    // List<string> titles = new();
+    ObservableCollection<string> titles = new();
 
 
     public MainPage()
@@ -82,7 +85,7 @@ public partial class MainPage : ContentPage
         {
             titles.Add(item.Title);
         }
-        TitleView.ItemsSource = titles;
+        // TitleView.ItemsSource = titles;
         return true;
 
     }
