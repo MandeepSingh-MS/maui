@@ -37,7 +37,7 @@
                  >
                   <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Label Text="{Binding Title}" />
+                <Label HeightRequest="300"  Text="{Binding Title}" />
             </DataTemplate>
         </CollectionView.ItemTemplate>
         </CollectionView>
