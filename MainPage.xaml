@@ -29,19 +29,17 @@
                  />
 
 
-                 <ListView x:Name="TitleView" SelectionMode="Single"
-                 ItemTapped="OnItemclicked"
+                 <CollectionView x:Name="TitleView" SelectionMode="Single"
+                 SelectionChangedCommand="OnItemclicked"
 
                   Grid.Row="2"
                  >
-                  <ListView.ItemTemplate>
+                  <CollectionView.ItemTemplate>
             <DataTemplate>
-                 <ViewCell>
                 <Label Text="{Binding Title}" />
-            </ViewCell>
             </DataTemplate>
-        </ListView.ItemTemplate>
-        </ListView>
+        </CollectionView.ItemTemplate>
+        </CollectionView>
 
 
 
