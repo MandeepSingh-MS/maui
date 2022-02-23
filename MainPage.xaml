@@ -36,7 +36,7 @@
                  >
                   <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Label TextColor="Black"  Text="{Binding Title}" />
+                <Label Text="{Binding Title}" />
             </DataTemplate>
         </CollectionView.ItemTemplate>
         </CollectionView>
