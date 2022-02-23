@@ -30,7 +30,7 @@
 
 
                  <CollectionView x:Name="TitleView" SelectionMode="Single"
-                 SelectionChangedCommand="OnCollectionViewSelectionChanged"
+                 SelectionChanged="OnCollectionViewSelectionChanged"
 
                   Grid.Row="2"
                  >
